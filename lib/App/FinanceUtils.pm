@@ -1,6 +1,8 @@
 package App::FinanceUtils;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -25,7 +27,7 @@ my $res = gen_funcs_from_formulas(
         r => {
             caption => 'return rate',
             summary => 'Return rate (e.g. 0.06 for 6%)',
-            schema => ['float*', 'x.perl.coerce_rules'=>['str_percent']],
+            schema => ['float*', 'x.perl.coerce_rules'=>['From_str::percent']],
         },
         n => {
             caption => 'periods',
